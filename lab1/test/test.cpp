@@ -1,6 +1,7 @@
 #include <gtest/gtest.h>
 #include "../time_refactor.h"
 
+
 TEST(test_01, basic_test_set) {
     ASSERT_EQ(time_refactor(12, 15, "am"), "12:15");
 }
@@ -10,7 +11,7 @@ TEST(test_02, basic_test_set) {
 }
 
 TEST(test_03, basic_test_set) {
-    ASSERT_EQ(time_refactor(13, 00, "pm"), "");
+    ASSERT_EQ(time_refactor(13, 00, "pm"), "Wrong data!");
 }
 
 TEST(test_04, basic_test_set) {
@@ -18,15 +19,15 @@ TEST(test_04, basic_test_set) {
 }
 
 TEST(test_05, basic_test_set) {
-    ASSERT_EQ(time_refactor(00, 15, "pm"), "");
+    ASSERT_EQ(time_refactor(00, 15, "pm"), "Wrong data!");
 }
 
 TEST(test_06, basic_test_set) {
-    ASSERT_EQ(time_refactor(-100, 15, "pm"), "");
+    ASSERT_EQ(time_refactor(-100, 15, "pm"), "Wrong data!");
 }
 
 TEST(test_07, basic_test_set) {
-    ASSERT_EQ(time_refactor(13, 15, "am"), "");
+    ASSERT_EQ(time_refactor(13, 15, "am"), "Wrong data!");
 }
 
 TEST(test_08, basic_test_set) {
@@ -38,11 +39,11 @@ TEST(test_09, basic_test_set) {
 }
 
 TEST(test_10, basic_test_set) {
-    ASSERT_EQ(time_refactor(1, 60, "am"), "");
+    ASSERT_EQ(time_refactor(1, 60, "am"), "Wrong data!");
 }
 
 TEST(test_11, basic_test_set) {
-    ASSERT_EQ(time_refactor(1, 60, "pm"), "");
+    ASSERT_EQ(time_refactor(1, 60, "pm"), "Wrong data!");
 }
 
 TEST(test_12, basic_test_set) {
@@ -50,7 +51,7 @@ TEST(test_12, basic_test_set) {
 }
 
 TEST(test_13, basic_test_set) {
-    ASSERT_EQ(time_refactor(8, 40, "mm"), "");
+    ASSERT_EQ(time_refactor(8, 40, "mm"), "Wrong data!");
 }
 
 TEST(test_14, basic_test_set) {
