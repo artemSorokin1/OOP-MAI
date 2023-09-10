@@ -147,7 +147,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "lab1/time_refactor.cpp",
+			"path" : "lab1/src/time_refactor.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

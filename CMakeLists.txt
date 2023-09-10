@@ -4,9 +4,9 @@ project(lab1)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(lab1 lab1/main.cpp lab1/time_refactor.cpp)
+add_executable(lab1 lab1/src/main.cpp lab1/src/time_refactor.cpp)
 
-add_executable(tests lab1/test/test.cpp lab1/time_refactor.cpp)
+add_executable(tests lab1/test/test.cpp lab1/src/time_refactor.cpp)
 
 enable_testing()
 

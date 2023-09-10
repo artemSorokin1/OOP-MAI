@@ -49,17 +49,17 @@ cmake_ninja_workdir = /Users/artemsorokin/Desktop/Programming/labs/cmake-build-d
 
 build cmake_object_order_depends_target_lab1: phony || CMakeFiles/lab1.dir
 
-build CMakeFiles/lab1.dir/lab1/main.cpp.o: CXX_COMPILER__lab1_Debug /Users/artemsorokin/Desktop/Programming/labs/lab1/main.cpp || cmake_object_order_depends_target_lab1
-  DEP_FILE = CMakeFiles/lab1.dir/lab1/main.cpp.o.d
+build CMakeFiles/lab1.dir/lab1/src/main.cpp.o: CXX_COMPILER__lab1_Debug /Users/artemsorokin/Desktop/Programming/labs/lab1/src/main.cpp || cmake_object_order_depends_target_lab1
+  DEP_FILE = CMakeFiles/lab1.dir/lab1/src/main.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17
   OBJECT_DIR = CMakeFiles/lab1.dir
-  OBJECT_FILE_DIR = CMakeFiles/lab1.dir/lab1
+  OBJECT_FILE_DIR = CMakeFiles/lab1.dir/lab1/src
 
-build CMakeFiles/lab1.dir/lab1/time_refactor.cpp.o: CXX_COMPILER__lab1_Debug /Users/artemsorokin/Desktop/Programming/labs/lab1/time_refactor.cpp || cmake_object_order_depends_target_lab1
-  DEP_FILE = CMakeFiles/lab1.dir/lab1/time_refactor.cpp.o.d
+build CMakeFiles/lab1.dir/lab1/src/time_refactor.cpp.o: CXX_COMPILER__lab1_Debug /Users/artemsorokin/Desktop/Programming/labs/lab1/src/time_refactor.cpp || cmake_object_order_depends_target_lab1
+  DEP_FILE = CMakeFiles/lab1.dir/lab1/src/time_refactor.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17
   OBJECT_DIR = CMakeFiles/lab1.dir
-  OBJECT_FILE_DIR = CMakeFiles/lab1.dir/lab1
+  OBJECT_FILE_DIR = CMakeFiles/lab1.dir/lab1/src
 
 
 # =============================================================================
@@ -69,7 +69,7 @@ build CMakeFiles/lab1.dir/lab1/time_refactor.cpp.o: CXX_COMPILER__lab1_Debug /Us
 #############################################
 # Link the executable lab1
 
-build lab1: CXX_EXECUTABLE_LINKER__lab1_Debug CMakeFiles/lab1.dir/lab1/main.cpp.o CMakeFiles/lab1.dir/lab1/time_refactor.cpp.o
+build lab1: CXX_EXECUTABLE_LINKER__lab1_Debug CMakeFiles/lab1.dir/lab1/src/main.cpp.o CMakeFiles/lab1.dir/lab1/src/time_refactor.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
   OBJECT_DIR = CMakeFiles/lab1.dir
   POST_BUILD = :
@@ -93,12 +93,12 @@ build CMakeFiles/tests.dir/lab1/test/test.cpp.o: CXX_COMPILER__tests_Debug /User
   OBJECT_DIR = CMakeFiles/tests.dir
   OBJECT_FILE_DIR = CMakeFiles/tests.dir/lab1/test
 
-build CMakeFiles/tests.dir/lab1/time_refactor.cpp.o: CXX_COMPILER__tests_Debug /Users/artemsorokin/Desktop/Programming/labs/lab1/time_refactor.cpp || cmake_object_order_depends_target_tests
-  DEP_FILE = CMakeFiles/tests.dir/lab1/time_refactor.cpp.o.d
+build CMakeFiles/tests.dir/lab1/src/time_refactor.cpp.o: CXX_COMPILER__tests_Debug /Users/artemsorokin/Desktop/Programming/labs/lab1/src/time_refactor.cpp || cmake_object_order_depends_target_tests
+  DEP_FILE = CMakeFiles/tests.dir/lab1/src/time_refactor.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17
   INCLUDES = -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/tests.dir
-  OBJECT_FILE_DIR = CMakeFiles/tests.dir/lab1
+  OBJECT_FILE_DIR = CMakeFiles/tests.dir/lab1/src
 
 
 # =============================================================================
@@ -108,7 +108,7 @@ build CMakeFiles/tests.dir/lab1/time_refactor.cpp.o: CXX_COMPILER__tests_Debug /
 #############################################
 # Link the executable tests
 
-build tests: CXX_EXECUTABLE_LINKER__tests_Debug CMakeFiles/tests.dir/lab1/test/test.cpp.o CMakeFiles/tests.dir/lab1/time_refactor.cpp.o | /opt/homebrew/lib/libgtest.a /opt/homebrew/lib/libgtest_main.a /opt/homebrew/lib/libgmock.a /opt/homebrew/lib/libgmock_main.a /opt/homebrew/lib/libgmock.a /opt/homebrew/lib/libgtest.a
+build tests: CXX_EXECUTABLE_LINKER__tests_Debug CMakeFiles/tests.dir/lab1/test/test.cpp.o CMakeFiles/tests.dir/lab1/src/time_refactor.cpp.o | /opt/homebrew/lib/libgtest.a /opt/homebrew/lib/libgtest_main.a /opt/homebrew/lib/libgmock.a /opt/homebrew/lib/libgmock_main.a /opt/homebrew/lib/libgmock.a /opt/homebrew/lib/libgtest.a
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
   LINK_LIBRARIES = /opt/homebrew/lib/libgtest.a  /opt/homebrew/lib/libgtest_main.a  /opt/homebrew/lib/libgmock.a  /opt/homebrew/lib/libgmock_main.a  /opt/homebrew/lib/libgmock.a  /opt/homebrew/lib/libgtest.a
   OBJECT_DIR = CMakeFiles/tests.dir
