@@ -203,29 +203,29 @@ lab1/src/vowel_deleter.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests1.dir/build.make CMakeFiles/tests1.dir/lab1/src/vowel_deleter.cpp.s
 .PHONY : lab1/src/vowel_deleter.cpp.s
 
-lab1/test/test06.o: lab1/test/test06.cpp.o
-.PHONY : lab1/test/test06.o
+lab1/test/test_vowel_deleter.o: lab1/test/test_vowel_deleter.cpp.o
+.PHONY : lab1/test/test_vowel_deleter.o
 
 # target to build an object file
-lab1/test/test06.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests1.dir/build.make CMakeFiles/tests1.dir/lab1/test/test06.cpp.o
-.PHONY : lab1/test/test06.cpp.o
+lab1/test/test_vowel_deleter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests1.dir/build.make CMakeFiles/tests1.dir/lab1/test/test_vowel_deleter.cpp.o
+.PHONY : lab1/test/test_vowel_deleter.cpp.o
 
-lab1/test/test06.i: lab1/test/test06.cpp.i
-.PHONY : lab1/test/test06.i
+lab1/test/test_vowel_deleter.i: lab1/test/test_vowel_deleter.cpp.i
+.PHONY : lab1/test/test_vowel_deleter.i
 
 # target to preprocess a source file
-lab1/test/test06.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests1.dir/build.make CMakeFiles/tests1.dir/lab1/test/test06.cpp.i
-.PHONY : lab1/test/test06.cpp.i
+lab1/test/test_vowel_deleter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests1.dir/build.make CMakeFiles/tests1.dir/lab1/test/test_vowel_deleter.cpp.i
+.PHONY : lab1/test/test_vowel_deleter.cpp.i
 
-lab1/test/test06.s: lab1/test/test06.cpp.s
-.PHONY : lab1/test/test06.s
+lab1/test/test_vowel_deleter.s: lab1/test/test_vowel_deleter.cpp.s
+.PHONY : lab1/test/test_vowel_deleter.s
 
 # target to generate assembly for a file
-lab1/test/test06.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests1.dir/build.make CMakeFiles/tests1.dir/lab1/test/test06.cpp.s
-.PHONY : lab1/test/test06.cpp.s
+lab1/test/test_vowel_deleter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests1.dir/build.make CMakeFiles/tests1.dir/lab1/test/test_vowel_deleter.cpp.s
+.PHONY : lab1/test/test_vowel_deleter.cpp.s
 
 # Help Target
 help:
@@ -244,9 +244,9 @@ help:
 	@echo "... lab1/src/vowel_deleter.o"
 	@echo "... lab1/src/vowel_deleter.i"
 	@echo "... lab1/src/vowel_deleter.s"
-	@echo "... lab1/test/test06.o"
-	@echo "... lab1/test/test06.i"
-	@echo "... lab1/test/test06.s"
+	@echo "... lab1/test/test_vowel_deleter.o"
+	@echo "... lab1/test/test_vowel_deleter.i"
+	@echo "... lab1/test/test_vowel_deleter.s"
 .PHONY : help
 
 

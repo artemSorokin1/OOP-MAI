@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 
 add_executable(lab1 lab1/src/main.cpp lab1/src/vowel_deleter.cpp)
-add_executable(tests1 lab1/test/test06.cpp lab1/src/vowel_deleter.cpp)
+add_executable(tests1 lab1/test/test_vowel_deleter.cpp lab1/src/vowel_deleter.cpp)
 
 #add_executable(lab2 lab2/src/main.cpp lab2/src/money.cpp)
 #add_executable(tests2 lab2/test/test.cpp lab2/src/money.cpp)

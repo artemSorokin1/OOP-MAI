@@ -9,7 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/artemsorokin/Desktop/Programming/labs/lab1/src/vowel_deleter.cpp" "CMakeFiles/tests1.dir/lab1/src/vowel_deleter.cpp.o" "gcc" "CMakeFiles/tests1.dir/lab1/src/vowel_deleter.cpp.o.d"
-  "/Users/artemsorokin/Desktop/Programming/labs/lab1/test/test06.cpp" "CMakeFiles/tests1.dir/lab1/test/test06.cpp.o" "gcc" "CMakeFiles/tests1.dir/lab1/test/test06.cpp.o.d"
+  "/Users/artemsorokin/Desktop/Programming/labs/lab1/test/test_vowel_deleter.cpp" "CMakeFiles/tests1.dir/lab1/test/test_vowel_deleter.cpp.o" "gcc" "CMakeFiles/tests1.dir/lab1/test/test_vowel_deleter.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

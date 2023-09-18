@@ -735,7 +735,7 @@ CMakeFiles/tests1.dir/lab1/src/vowel_deleter.cpp.o: /Users/artemsorokin/Desktop/
   /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdint.h \
   /Users/artemsorokin/Desktop/Programming/labs/lab1/src/vowel_deleter.h
 
-CMakeFiles/tests1.dir/lab1/test/test06.cpp.o: /Users/artemsorokin/Desktop/Programming/labs/lab1/test/test06.cpp \
+CMakeFiles/tests1.dir/lab1/test/test_vowel_deleter.cpp.o: /Users/artemsorokin/Desktop/Programming/labs/lab1/test/test_vowel_deleter.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/Availability.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/AvailabilityInternal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/AvailabilityMacros.h \
@@ -1539,8 +1539,6 @@ CMakeFiles/tests1.dir/lab1/test/test06.cpp.o: /Users/artemsorokin/Desktop/Progra
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_regex.h:
 
-/Users/artemsorokin/Desktop/Programming/labs/lab1/test/test06.cpp:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/condition_variable:
 
 /Users/artemsorokin/Desktop/Programming/labs/lab1/src/vowel_deleter.h:
@@ -2124,6 +2122,8 @@ CMakeFiles/tests1.dir/lab1/test/test06.cpp.o: /Users/artemsorokin/Desktop/Progra
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__iterator/access.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/pointer_to_binary_function.h:
+
+/Users/artemsorokin/Desktop/Programming/labs/lab1/test/test_vowel_deleter.cpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/exception:
 

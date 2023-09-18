@@ -69,19 +69,19 @@ include CMakeFiles/tests1.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/tests1.dir/flags.make
 
-CMakeFiles/tests1.dir/lab1/test/test06.cpp.o: CMakeFiles/tests1.dir/flags.make
-CMakeFiles/tests1.dir/lab1/test/test06.cpp.o: /Users/artemsorokin/Desktop/Programming/labs/lab1/test/test06.cpp
-CMakeFiles/tests1.dir/lab1/test/test06.cpp.o: CMakeFiles/tests1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/artemsorokin/Desktop/Programming/labs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tests1.dir/lab1/test/test06.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests1.dir/lab1/test/test06.cpp.o -MF CMakeFiles/tests1.dir/lab1/test/test06.cpp.o.d -o CMakeFiles/tests1.dir/lab1/test/test06.cpp.o -c /Users/artemsorokin/Desktop/Programming/labs/lab1/test/test06.cpp
+CMakeFiles/tests1.dir/lab1/test/test_vowel_deleter.cpp.o: CMakeFiles/tests1.dir/flags.make
+CMakeFiles/tests1.dir/lab1/test/test_vowel_deleter.cpp.o: /Users/artemsorokin/Desktop/Programming/labs/lab1/test/test_vowel_deleter.cpp
+CMakeFiles/tests1.dir/lab1/test/test_vowel_deleter.cpp.o: CMakeFiles/tests1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/artemsorokin/Desktop/Programming/labs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tests1.dir/lab1/test/test_vowel_deleter.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests1.dir/lab1/test/test_vowel_deleter.cpp.o -MF CMakeFiles/tests1.dir/lab1/test/test_vowel_deleter.cpp.o.d -o CMakeFiles/tests1.dir/lab1/test/test_vowel_deleter.cpp.o -c /Users/artemsorokin/Desktop/Programming/labs/lab1/test/test_vowel_deleter.cpp
 
-CMakeFiles/tests1.dir/lab1/test/test06.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tests1.dir/lab1/test/test06.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/artemsorokin/Desktop/Programming/labs/lab1/test/test06.cpp > CMakeFiles/tests1.dir/lab1/test/test06.cpp.i
+CMakeFiles/tests1.dir/lab1/test/test_vowel_deleter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tests1.dir/lab1/test/test_vowel_deleter.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/artemsorokin/Desktop/Programming/labs/lab1/test/test_vowel_deleter.cpp > CMakeFiles/tests1.dir/lab1/test/test_vowel_deleter.cpp.i
 
-CMakeFiles/tests1.dir/lab1/test/test06.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests1.dir/lab1/test/test06.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/artemsorokin/Desktop/Programming/labs/lab1/test/test06.cpp -o CMakeFiles/tests1.dir/lab1/test/test06.cpp.s
+CMakeFiles/tests1.dir/lab1/test/test_vowel_deleter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests1.dir/lab1/test/test_vowel_deleter.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/artemsorokin/Desktop/Programming/labs/lab1/test/test_vowel_deleter.cpp -o CMakeFiles/tests1.dir/lab1/test/test_vowel_deleter.cpp.s
 
 CMakeFiles/tests1.dir/lab1/src/vowel_deleter.cpp.o: CMakeFiles/tests1.dir/flags.make
 CMakeFiles/tests1.dir/lab1/src/vowel_deleter.cpp.o: /Users/artemsorokin/Desktop/Programming/labs/lab1/src/vowel_deleter.cpp
@@ -99,13 +99,13 @@ CMakeFiles/tests1.dir/lab1/src/vowel_deleter.cpp.s: cmake_force
 
 # Object files for target tests1
 tests1_OBJECTS = \
-"CMakeFiles/tests1.dir/lab1/test/test06.cpp.o" \
+"CMakeFiles/tests1.dir/lab1/test/test_vowel_deleter.cpp.o" \
 "CMakeFiles/tests1.dir/lab1/src/vowel_deleter.cpp.o"
 
 # External object files for target tests1
 tests1_EXTERNAL_OBJECTS =
 
-tests1: CMakeFiles/tests1.dir/lab1/test/test06.cpp.o
+tests1: CMakeFiles/tests1.dir/lab1/test/test_vowel_deleter.cpp.o
 tests1: CMakeFiles/tests1.dir/lab1/src/vowel_deleter.cpp.o
 tests1: CMakeFiles/tests1.dir/build.make
 tests1: /opt/homebrew/lib/libgtest.a

@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/tests1.dir/lab1/src/vowel_deleter.cpp.o"
   "CMakeFiles/tests1.dir/lab1/src/vowel_deleter.cpp.o.d"
-  "CMakeFiles/tests1.dir/lab1/test/test06.cpp.o"
-  "CMakeFiles/tests1.dir/lab1/test/test06.cpp.o.d"
+  "CMakeFiles/tests1.dir/lab1/test/test_vowel_deleter.cpp.o"
+  "CMakeFiles/tests1.dir/lab1/test/test_vowel_deleter.cpp.o.d"
   "tests1"
   "tests1.pdb"
 )
