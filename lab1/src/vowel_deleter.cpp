@@ -1,7 +1,7 @@
 #include "vowel_deleter.h"
 
 
-std::vector<char> symbols = {'a', 'e', 'i', 'o', 'u', 'y'};
+const std::vector<char> symbols = {'a', 'e', 'i', 'o', 'u', 'y'};
 
 std::string vowel_deleter_v2(std::string input) {
     std::string res {""};
