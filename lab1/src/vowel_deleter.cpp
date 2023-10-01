@@ -1,19 +1,18 @@
 #include "vowel_deleter.h"
 
 
-const std::vector<char> symbols = {'a', 'e', 'i', 'o', 'u', 'y'};
+const std::vector<char> vowels = {'a', 'e', 'i', 'o', 'u', 'y'};
 
-std::string vowel_deleter(std::string input) {
+std::string vowel_deleter(std::string str) {
     std::string result {""};
-    for (auto & element : input) {
-        const char element_lower = tolower(element);
-        bool cheak = false;
-        for (const auto & symbol : symbols) {
-            if (element_lower == symbol)
-                cheak = true;
+    for (auto symbol : str) {
+        bool is_delete_vowel = false;
+        for (const auto & vowel : vowels) {
+            if (tolower(symbol) == vowel)
+                is_delete_vowel = true;
         }
-        if (!cheak)
-            result += element;
+        if (!is_delete_vowel)
+            result += symbol;
     }
     return result;
 }

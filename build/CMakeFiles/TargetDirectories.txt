@@ -1,5 +1,0 @@
-/Users/artemsorokin/Desktop/Programming/labs/build/CMakeFiles/lab1.dir
-/Users/artemsorokin/Desktop/Programming/labs/build/CMakeFiles/tests1.dir
-/Users/artemsorokin/Desktop/Programming/labs/build/CMakeFiles/test.dir
-/Users/artemsorokin/Desktop/Programming/labs/build/CMakeFiles/edit_cache.dir
-/Users/artemsorokin/Desktop/Programming/labs/build/CMakeFiles/rebuild_cache.dir
