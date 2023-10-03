@@ -12,8 +12,8 @@ private:
     std::vector<unsigned char> sum_of_money;
 public:
 
-    Money();
-    Money(std::string start_sum);
+    Money(std::string start_sum = "000");
+    Money(std::initializer_list<unsigned char> list) : sum_of_money(list) {}
     ~Money();
     Money(const Money & money);
     Money& operator= (const Money& money);
@@ -25,6 +25,8 @@ public:
     friend bool operator> (const Money& money1, const Money & money2);
     friend bool operator>= (const Money& money1, const Money & money2);
     friend bool operator<= (const Money& money1, const Money & money2);
+    friend bool operator!= (const Money& money1, const Money & money2);
+    std::string get() const;
 };
 
 
@@ -35,6 +37,8 @@ Money& operator+ (Money& money1, Money& money2);
 Money& operator- (Money& money1, Money& money2);
 
 bool operator== (const Money& money1, const Money & money2);
+
+bool operator!= (const Money& money1, const Money & money2);
 
 bool operator> (const Money& money1, const Money & money2);
 

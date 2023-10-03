@@ -3,14 +3,12 @@
 
 int main() {
     try {
-        Money money1("123");
+        Money money1 = {'1', '2', '3'};
 
-        Money money2("123");
+        Money money2("2000");
 
-       bool a = money1 >= money2;
-
-       std::cout << a << '\n';
-
+        std::string str = money1.get();
+        std::cout << str << '\n';
     }
     catch (std::exception & ex) {
         std::cout << "error:\t" <<  ex.what() << '\n';
