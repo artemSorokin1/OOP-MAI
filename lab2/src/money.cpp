@@ -6,10 +6,8 @@
 
 
 
-
 Money::~Money(){
-//    sum_of_money.~vector();
-//    std::cout << "des" << '\n';
+
 }
 
 
@@ -196,7 +194,7 @@ bool operator!= (const Money& money1, const Money & money2) {
 }
 
 
-std::string Money::get() const {
+std::string Money::getSumOfMoney() const {
     std::string str = "";
     for (const auto & elem : this->sum_of_money) {
         str += elem;

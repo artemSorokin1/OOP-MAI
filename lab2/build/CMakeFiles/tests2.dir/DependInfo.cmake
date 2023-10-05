@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/artemsorokin/Desktop/Programming/labs/lab2/src/MoneyBuilder.cpp" "CMakeFiles/tests2.dir/src/MoneyBuilder.cpp.o" "gcc" "CMakeFiles/tests2.dir/src/MoneyBuilder.cpp.o.d"
   "/Users/artemsorokin/Desktop/Programming/labs/lab2/src/money.cpp" "CMakeFiles/tests2.dir/src/money.cpp.o" "gcc" "CMakeFiles/tests2.dir/src/money.cpp.o.d"
   "/Users/artemsorokin/Desktop/Programming/labs/lab2/test/test.cpp" "CMakeFiles/tests2.dir/test/test.cpp.o" "gcc" "CMakeFiles/tests2.dir/test/test.cpp.o.d"
   )

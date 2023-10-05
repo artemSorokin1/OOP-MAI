@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/lab2.dir/src/MoneyBuilder.cpp.o"
+  "CMakeFiles/lab2.dir/src/MoneyBuilder.cpp.o.d"
   "CMakeFiles/lab2.dir/src/main.cpp.o"
   "CMakeFiles/lab2.dir/src/main.cpp.o.d"
   "CMakeFiles/lab2.dir/src/money.cpp.o"

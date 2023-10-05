@@ -2,12 +2,12 @@
 #include <iostream>
 #include <vector>
 #include <cmath>
-#include <iostream>
 #include <string>
 #include <utility>
 
 
 class Money {
+    friend class MoneyBuilder;
 private:
     std::vector<unsigned char> sum_of_money;
 public:
@@ -26,7 +26,7 @@ public:
     friend bool operator>= (const Money& money1, const Money & money2);
     friend bool operator<= (const Money& money1, const Money & money2);
     friend bool operator!= (const Money& money1, const Money & money2);
-    std::string get() const;
+    std::string getSumOfMoney() const;
 };
 
 

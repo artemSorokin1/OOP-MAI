@@ -152,6 +152,33 @@ tests2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests2.dir/build.make CMakeFiles/tests2.dir/build
 .PHONY : tests2/fast
 
+src/MoneyBuilder.o: src/MoneyBuilder.cpp.o
+.PHONY : src/MoneyBuilder.o
+
+# target to build an object file
+src/MoneyBuilder.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2.dir/build.make CMakeFiles/lab2.dir/src/MoneyBuilder.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests2.dir/build.make CMakeFiles/tests2.dir/src/MoneyBuilder.cpp.o
+.PHONY : src/MoneyBuilder.cpp.o
+
+src/MoneyBuilder.i: src/MoneyBuilder.cpp.i
+.PHONY : src/MoneyBuilder.i
+
+# target to preprocess a source file
+src/MoneyBuilder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2.dir/build.make CMakeFiles/lab2.dir/src/MoneyBuilder.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests2.dir/build.make CMakeFiles/tests2.dir/src/MoneyBuilder.cpp.i
+.PHONY : src/MoneyBuilder.cpp.i
+
+src/MoneyBuilder.s: src/MoneyBuilder.cpp.s
+.PHONY : src/MoneyBuilder.s
+
+# target to generate assembly for a file
+src/MoneyBuilder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2.dir/build.make CMakeFiles/lab2.dir/src/MoneyBuilder.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests2.dir/build.make CMakeFiles/tests2.dir/src/MoneyBuilder.cpp.s
+.PHONY : src/MoneyBuilder.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -238,6 +265,9 @@ help:
 	@echo "... test"
 	@echo "... lab2"
 	@echo "... tests2"
+	@echo "... src/MoneyBuilder.o"
+	@echo "... src/MoneyBuilder.i"
+	@echo "... src/MoneyBuilder.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

@@ -5,8 +5,8 @@ project(lab2)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(lab2 src/main.cpp src/money.cpp)
-add_executable(tests2 test/test.cpp src/money.cpp)
+add_executable(lab2 src/main.cpp src/money.cpp src/MoneyBuilder.cpp)
+add_executable(tests2 test/test.cpp src/money.cpp src/MoneyBuilder.cpp)
 
 
 enable_testing()
