@@ -10,6 +10,12 @@ Money::~Money(){
 }
 
 
+Money::Money(Money &&other) {
+    this->sum_of_money = other.sum_of_money;
+    other.~Money();
+}
+
+
 Money::Money(std::string start_sum) {
     int n = (int)start_sum.size();
     for (int i = 0; i < n; ++i) {

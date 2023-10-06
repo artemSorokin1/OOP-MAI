@@ -12,6 +12,7 @@ private:
     std::vector<unsigned char> sum_of_money;
 public:
 
+    Money(Money &&other);
     Money(std::string start_sum = "000");
     Money(std::initializer_list<unsigned char> list) : sum_of_money(list) {}
     ~Money();
