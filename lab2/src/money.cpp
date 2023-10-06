@@ -1,7 +1,6 @@
 #include "money.h"
 
 
-
 #define all(x) x.begin(), x.end()
 
 
