@@ -21,7 +21,7 @@ public:
     bool getState() const;
     std::string getName() const;
     std::pair<double, double> getCords() const;
-    bool isClose(INPC *obj, double dist);
+    bool isClose(INPC *obj, double dist) const;
     virtual ~INPC() = default;
 };
 

@@ -2,7 +2,7 @@
 
 
 std::ostream & operator<< (std::ostream &out, const std::pair<double, double> & p) {
-    out << "( " << p.first << ", " << p.second << " )";
+    out << "(" << p.first << ", " << p.second << ")";
     return out;
 }
 

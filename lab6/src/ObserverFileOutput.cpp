@@ -8,7 +8,8 @@ void ObserverFileOutput::update(INPC *npc) const noexcept {
     try {
         if (logs.is_open()) {
             logs << "Убит " << npc->getName() << '\n';
-            logs << "С кординатами: " << npc->getCords().first << npc->getCords().second << '\n';
+            logs << "С кординатами: " << "(" <<
+                npc->getCords().first << ", " <<  npc->getCords().second << ")\n";
         } else {
             throw std::logic_error("Ошибка открытия файла");
         }

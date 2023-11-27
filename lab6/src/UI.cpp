@@ -91,7 +91,7 @@ std::vector<INPC*> loadNpcArrayFromFile(const std::string &filename) {
 
 
 void makeFight(std::vector<INPC*> &npcArray) {
-    std::vector<INPC*> deadNote;
+    std::set<INPC*> deadNote;
 
     DeathAgregator deathAgregator;
     ObserverFileOutput fileObserver;
@@ -102,6 +102,7 @@ void makeFight(std::vector<INPC*> &npcArray) {
     BearVisitor bearVisitor;
     ElfVisitor elfVisitor;
     OutlawVisitor outlawVisitor;
+
 
     for (const auto & attacker : npcArray) {
         for (const auto & defender : npcArray) {
@@ -115,7 +116,7 @@ void makeFight(std::vector<INPC*> &npcArray) {
                     fightStatus = defender->accept(outlawVisitor);
                 }
                 if (fightStatus) {
-                    deadNote.emplace_back(defender);
+                    deadNote.insert(defender);
                 }
             }
         }

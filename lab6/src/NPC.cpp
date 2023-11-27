@@ -3,13 +3,13 @@
 
 INPC::INPC(std::string name) : npcName(std::move(name)), state(ALIVE) {}
 
-bool INPC::isClose(INPC *obj, double dist) {
+bool INPC::isClose(INPC *obj, double dist) const{
     std::pair<double, double> cordAttacker = this->getCords();
     std::pair<double, double> cordDefender = obj->getCords();
     double x = cordAttacker.first - cordDefender.first;
     double y = cordAttacker.second - cordDefender.second;
-    double d = std::sqrt(x * x + y * y);
-    return dist <= d;
+    double distance = std::sqrt(x * x + y * y);
+    return dist >= distance;
 }
 
 bool INPC::getState() const { return state; }

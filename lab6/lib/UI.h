@@ -3,6 +3,7 @@
 #include <vector>
 #include <ctime>
 #include <fstream>
+#include <set>
 #include "NPCFabric.h"
 #include "../lib/UI.h"
 #include "../lib/DeathAgregator.h"
@@ -18,7 +19,7 @@
 
 void NPCGenerator(std::vector<INPC*> &npcArray, size_t npcCount);
 
-void loadNpcArrayToFile(const std::vector<INPC*> &npcArray, const std::string &filename);
+void saveNpcArrayToFile(const std::vector<INPC*> &npcArray, const std::string &filename);
 
 INPC *npcFromName(const std::string &name, double x, double y);
 
