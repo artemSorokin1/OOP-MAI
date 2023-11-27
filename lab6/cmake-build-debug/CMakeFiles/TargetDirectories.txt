@@ -1,0 +1,5 @@
+/Users/artemsorokin/Desktop/Programming/labs/lab6/cmake-build-debug/CMakeFiles/lab6.dir
+/Users/artemsorokin/Desktop/Programming/labs/lab6/cmake-build-debug/CMakeFiles/tests6.dir
+/Users/artemsorokin/Desktop/Programming/labs/lab6/cmake-build-debug/CMakeFiles/test.dir
+/Users/artemsorokin/Desktop/Programming/labs/lab6/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/artemsorokin/Desktop/Programming/labs/lab6/cmake-build-debug/CMakeFiles/rebuild_cache.dir
