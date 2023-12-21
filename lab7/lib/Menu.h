@@ -5,11 +5,10 @@
 #include <fstream>
 #include <set>
 #include "NPCFabric.h"
-#include "../lib/UI.h"
-#include "../lib/DeathAgregator.h"
+#include "../lib/DeathHandler.h"
 
-#define WIGHT 500
-#define HIGH 500
+#define WIDTH 90
+#define HIGH 30
 #define NPC_CNT 3
 #define BearType 1
 #define ElfType 2

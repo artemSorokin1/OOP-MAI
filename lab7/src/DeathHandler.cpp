@@ -1,13 +1,10 @@
-#include "../lib/DeathAgregator.h"
+#include "../lib/DeathHandler.h"
 
-
-
-void DeathAgregator::attach(IObserver *observer) {
+void DeathHandler::attach(IObserver *observer) {
     observers.push_back(observer);
 }
 
-
-void DeathAgregator::detach(IObserver *observer) {
+void DeathHandler::detach(IObserver *observer) {
     int n = static_cast<int>(observers.size());
     int index = -1;
     for (int i = 0; i < n; ++i) {
@@ -21,8 +18,7 @@ void DeathAgregator::detach(IObserver *observer) {
     observers.resize(n - 1);
 }
 
-
-void DeathAgregator::notify(INPC( *npc)) {
+void DeathHandler::notify(INPC( *npc)) {
     for (auto & observer : observers) {
         observer->update(npc);
     }

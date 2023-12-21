@@ -1,6 +1,6 @@
-#include "../lib/Menu.h"
+#include "../lib/UI.h"
 
-void Menu::Start() {
+void UI::Start() {
     int npcCounter = 0;
     std::vector<INPC*> npcArray;
     std::cout << "Введите количесво создаваемых NPC: ";

@@ -1,6 +1,6 @@
 #pragma once
-#include "UI.h"
+#include "Menu.h"
 
-struct Menu {
+struct UI {
     static void Start();
 };

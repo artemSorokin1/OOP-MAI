@@ -1,11 +1,11 @@
-#include "../lib/UI.h"
+#include "../lib/Menu.h"
 
 void NPCGenerator(std::vector<INPC*> &npcArray, size_t npcCount) {
     srand(time(nullptr));
     for (size_t i = 0; i < npcCount; ++i) {
         INPC *npc = nullptr;
         int randomNumber = std::rand() % NPC_CNT + 1;
-        double x = std::rand() % WIGHT;
+        double x = std::rand() % WIDTH;
         double y = std::rand() % HIGH;
         switch (randomNumber) {
             case BearType:
@@ -87,7 +87,7 @@ std::vector<INPC*> loadNpcArrayFromFile(const std::string &filename) {
 void makeFight(std::vector<INPC*> &npcArray) {
     std::set<INPC*> deadNote;
 
-    DeathAgregator deathAgregator;
+    DeathHandler deathAgregator;
     ObserverFileOutput fileObserver;
     ObserverConsolOutput consolObserver;
     deathAgregator.attach(&fileObserver);
@@ -97,10 +97,11 @@ void makeFight(std::vector<INPC*> &npcArray) {
     ElfVisitor elfVisitor;
     OutlawVisitor outlawVisitor;
 
-    double distance = 10;
     for (const auto & attacker : npcArray) {
         for (const auto & defender : npcArray) {
-            if (attacker != defender && attacker->isClose(defender, distance)) {
+            if (attacker != defender && attacker->isClose(defender, attacker->killDist)) {
+                int attackerCapacity = 1 + rand() % 6;
+                int defenderCapacity = 1 + rand() % 6;
                 bool fightStatus;
                 if (attacker->getName() == "Bear") {
                     fightStatus = defender->accept(bearVisitor);
@@ -109,7 +110,7 @@ void makeFight(std::vector<INPC*> &npcArray) {
                 } else {
                     fightStatus = defender->accept(outlawVisitor);
                 }
-                if (fightStatus) {
+                if (fightStatus && attackerCapacity > defenderCapacity) {
                     deadNote.insert(defender);
                 }
             }
@@ -118,6 +119,11 @@ void makeFight(std::vector<INPC*> &npcArray) {
 
     for (const auto & death : deadNote) {
         deathAgregator.notify(death);
+    }
+    for (auto it = npcArray.begin(); it != npcArray.end(); ++it) {
+        if (deadNote.count(*it)) {
+            npcArray.erase(it);
+        }
     }
 
     deathAgregator.detach(&consolObserver);

@@ -3,7 +3,6 @@
 #include "ObserverFileOutput.h"
 #include "ObserverConsolOutput.h"
 
-
 class IDeathAgregator {
 protected:
     virtual void attach(IObserver *observer) = 0;
@@ -11,9 +10,7 @@ protected:
     virtual void notify(INPC *npc) = 0;
 };
 
-
-
-class DeathAgregator : public IDeathAgregator {
+class DeathHandler : public IDeathAgregator {
 private:
     std::vector<IObserver*> observers;
 public:
